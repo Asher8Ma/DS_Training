@@ -228,15 +228,26 @@ quadratic_gradient_result = fit_quadratic_regression_gradient_descent(
 ) = quadratic_gradient_result.coefficients
 
 replacement_sources: dict[int, str] = {
-    0: "# Linear Regression Gradient Descent - Documented Recitation",
+    0: """
+# Linear Regression Gradient Descent - Documented Recitation
+
+> Original Markdown title: `# Linear Regression - recitation`
+""",
     1: """
 In this recitation we implement one-dimensional linear regression from its
 mean-squared-error gradient, inspect convergence under several learning
 rates, and extend the same vectorized optimizer to a quadratic model.
+
+> **Original recitation wording (preserved verbatim)**
+>
+> In this short excersice, you will experience with implementing linear regression
+> for 2D points. It may give you a deeper understanding about the limits this
+> model has, and how it works.
 """,
     3: """
 from __future__ import annotations
 
+# NumPy performs the vectorized calculations; sklearn supplies data and benchmarks.
 from matplotlib import pyplot as plt
 import numpy as np
 from numpy.typing import NDArray
@@ -263,9 +274,11 @@ LOGGER.info(
 )
 """,
     5: """
+# The examples used for every experiment are the same.
 NOISE_STANDARD_DEVIATION = 15.0
 NUMBER_OF_SAMPLES = 100
 
+# Generate one noisy predictor/target sample and expose its generating slope.
 (
     feature_data,
     target_data,
@@ -277,6 +290,7 @@ NUMBER_OF_SAMPLES = 100
     coef=True,
     random_state=RANDOM_SEED,
 )
+# Keep a predictable floating-point shape for plotting and matrix calculations.
 feature_data = np.asarray(
     a=feature_data,
     dtype=np.float64,
@@ -285,6 +299,7 @@ target_data = np.asarray(
     a=target_data,
     dtype=np.float64,
 )
+# sklearn may return the one-feature coefficient as a scalar or a length-one array.
 generating_slope = float(
     np.asarray(
         a=generating_slope_array,
@@ -307,6 +322,7 @@ data_summary = pd.DataFrame(
 data_summary.transpose()
 """,
     7: """
+# Plot the observations before fitting so the noisy linear trend is visible.
 data_figure, data_axes = plt.subplots(
     nrows=1,
     ncols=1,
@@ -346,6 +362,37 @@ $$
 One full-batch gradient step is
 $m\leftarrow m-\alpha\,\partial L/\partial m$ and
 $b\leftarrow b-\alpha\,\partial L/\partial b$.
+
+#### Original recitation wording (preserved verbatim)
+
+If you remember, the simple Linear Regression in 2D defined as follows:
+
+Two arrays: $X = \{x_1, x_2, \ldots, x_n\}$,
+$Y = \{y_1, y_2, \ldots, y_n\}$. The goal is to find values $b,m$ such
+that the cost function
+
+$$
+Loss(b,m) = \frac{1}{n}\overset{n}{\underset{i=1}{\sum}}
+(m x_i + b - y_i)^2
+$$
+
+is minimal. The way to do it is by derivating Loss(b,m):
+
+$$
+\frac{dL(b,m)}{db} = \frac{1}{n}\overset{n}{\underset{i=1}{\sum}}
+2(m x_i + b - y_i), \hspace{1cm}
+\frac{dL(b,m)}{dm} = \frac{1}{n}\overset{n}{\underset{i=1}{\sum}}
+2x_i(m x_i + b - y_i)
+$$
+
+And do gradient steps with it:
+
+$$
+b_{j+1} = b_j - \alpha \frac{dL(b_j,m_j)}{db}, \hspace{1cm}
+m_{j+1} = m_j - \alpha \frac{dL(b_j,m_j)}{dm}
+$$
+
+($\alpha$ = learning rate)
 """,
     10: """
 def linear_regression(
@@ -370,6 +417,8 @@ def linear_regression(
     Returns:
         Coefficients [m, b] with aligned parameter and MSE histories.
     \"\"\"
+    # Evaluate the current model, calculate both gradients, and make one GD step.
+    # The tested utility stores the initial state and every post-update state.
     return fit_linear_regression_gradient_descent(
         feature_data=feature_data,
         target_data=target_data,
@@ -380,6 +429,7 @@ def linear_regression(
     )
 """,
     12: """
+# Use the same examples, a deliberately distant starting point, and 50 GD steps.
 linear_result = linear_regression(
     feature_data=feature_data,
     target_data=target_data,
@@ -391,6 +441,7 @@ linear_result = linear_regression(
 learned_slope = float(linear_result.coefficients[0])
 learned_intercept = float(linear_result.coefficients[1])
 
+# Fit the independent closed-form least-squares benchmark on the same examples.
 sklearn_linear_model = LinearRegression()
 sklearn_linear_model.fit(
     X=feature_data,
@@ -430,6 +481,7 @@ linear_model_comparison = pd.DataFrame(
 linear_model_comparison
 """,
     14: """
+# Build an ordered x-grid so each plotted line is continuous rather than zig-zagging.
 line_predictor_values = np.linspace(
     start=float(feature_data[:, 0].min()),
     stop=float(feature_data[:, 0].max()),
@@ -438,6 +490,7 @@ line_predictor_values = np.linspace(
 learned_line = learned_slope * line_predictor_values + learned_intercept
 sklearn_line = sklearn_slope * line_predictor_values + sklearn_intercept
 
+# Plot the observations and both fitted model lines.
 line_figure, line_axes = plt.subplots(
     nrows=1,
     ncols=1,
@@ -475,6 +528,9 @@ plt.show()
     16: """
 Now inspect how the parameter pair $(m,b)$ moves over the loss surface and
 how the fixed learning rate controls convergence.
+
+> **Original recitation wording (preserved verbatim):** Now lets see how the
+> gradient descent process works in our linear regression function.
 """,
     17: "## Create a reusable cost function for each value of $m$ and $b$",
     18: """
@@ -486,6 +542,7 @@ def calc_cost(
     intercept: float,
 ) -> float:
     \"\"\"Return the same mean squared error optimized by the model.\"\"\"
+    # Evaluate the current prediction and its MSE without changing the parameters.
     return calculate_linear_mse(
         feature_data=feature_data,
         target_data=target_data,
@@ -518,6 +575,7 @@ cost_verification = pd.DataFrame(
 cost_verification
 """,
     20: """
+# Compare rates fairly: each run uses the same data, start, and 50 updates.
 learning_rates = np.asarray(
     a=[0.0001, 0.001, 0.01, 0.1, 0.5, 0.94],
     dtype=np.float64,
@@ -525,6 +583,7 @@ learning_rates = np.asarray(
 linear_design_matrix = build_linear_design_matrix(
     feature_data=feature_data,
 )
+# The largest Hessian eigenvalue gives a theoretical fixed-step safety bound.
 maximum_stable_learning_rate = (
     calculate_maximum_stable_learning_rate(
         design_matrix=linear_design_matrix,
@@ -535,6 +594,7 @@ learning_rate_histories: dict[float, GradientDescentResult] = {}
 learning_rate_rows: list[dict[str, float | str]] = []
 for learning_rate_value in learning_rates:
     current_learning_rate = float(learning_rate_value)
+    # Run the same full-batch GD procedure with only the learning rate changed.
     current_result = linear_regression(
         feature_data=feature_data,
         target_data=target_data,
@@ -575,8 +635,14 @@ learning_rate_summary
     22: """
 The figures below show both views requested by the exercise: trajectories
 of $(m,b)$ on the loss surface and MSE versus epoch for each learning rate.
+
+> **Original recitation wording (preserved verbatim):** In this part we will
+> draw the movement of $m$ and $b$ regarding the different learning rates.
+> This can give us a notion about how the choice of lr impact the convergence
+> of the algorithm.
 """,
     23: """
+# Determine the plotting range around the independent OLS optimum.
 slope_plot_values = np.linspace(
     start=sklearn_slope - 70.0,
     stop=sklearn_slope + 70.0,
@@ -587,6 +653,7 @@ intercept_plot_values = np.linspace(
     stop=sklearn_intercept + 70.0,
     num=160,
 )
+# Calculate the MSE at every (slope, intercept) coordinate.
 loss_surface = calculate_linear_loss_surface(
     feature_data=feature_data,
     target_data=target_data,
@@ -600,6 +667,7 @@ shifted_loss_surface = np.clip(
 )
 log_loss_surface = np.log10(shifted_loss_surface + 1.0)
 
+# Plot one parameter trajectory for each learning rate on the shared loss surface.
 trajectory_figure, trajectory_axes = plt.subplots(
     nrows=2,
     ncols=3,
@@ -662,6 +730,7 @@ learning_curve_figure, learning_curve_axes = plt.subplots(
     ncols=1,
     figsize=(9, 5),
 )
+# Plot the loss after each update; the logarithmic scale exposes slow convergence.
 for learning_rate_value in learning_rates:
     current_learning_rate = float(learning_rate_value)
     current_result = learning_rate_histories[current_learning_rate]
@@ -687,6 +756,7 @@ learning_curve_axes.legend(
 plt.show()
 """,
     25: """
+# Generate the noise-free quadratic target used by the bonus exercise.
 polynomial_target_data = (
     3.0 * np.square(feature_data[:, 0])
     - 2.0 * feature_data[:, 0]
@@ -694,6 +764,7 @@ polynomial_target_data = (
 )
 """,
     26: """
+# Plot the observations before fitting the quadratic model.
 polynomial_data_figure, polynomial_data_axes = plt.subplots(
     nrows=1,
     ncols=1,
@@ -720,6 +791,18 @@ $$
 L(a,b,c)=\frac{1}{N}\sum_{i=1}^{N}
 \left(a x_i^2+b x_i+c-y_i^{(\mathrm{poly})}\right)^2.
 $$
+
+#### Original recitation wording (preserved verbatim)
+
+Try to modify the function "linear_regression" so now it will return
+parameters a,b,c such that minimize the cost:
+
+$$
+Loss(b,m) = \frac{1}{n}\overset{n}{\underset{i=1}{\sum}}
+(a x_i^2 + bx_i + c - y_i^{(poly)})^2
+$$
+
+The corrected objective used by the code is the $L(a,b,c)$ expression above.
 """,
 }
 
@@ -871,6 +954,7 @@ def polynomial_regression(
     learning_rate: float = 0.0001,
 ) -> GradientDescentResult:
     \"\"\"Fit y = a*x**2 + b*x + c and retain the full history.\"\"\"
+    # Evaluate the quadratic model, calculate its three gradients, then take one GD step.
     return fit_quadratic_regression_gradient_descent(
         feature_data=feature_data,
         target_data=target_data,
@@ -882,6 +966,7 @@ def polynomial_regression(
     )
 
 
+# Turn [x**2, x, 1] into the three columns used by the vectorized optimizer.
 quadratic_design_matrix = build_quadratic_design_matrix(
     feature_data=feature_data,
 )
@@ -890,9 +975,11 @@ maximum_quadratic_learning_rate = (
         design_matrix=quadratic_design_matrix,
     )
 )
+# Use half the strict stability limit so the demonstration converges reliably.
 selected_quadratic_learning_rate = (
     0.5 * maximum_quadratic_learning_rate
 )
+# Start away from the answer so the optimization path has meaningful work to do.
 polynomial_result = polynomial_regression(
     feature_data=feature_data,
     target_data=polynomial_target_data,
@@ -908,6 +995,7 @@ polynomial_result = polynomial_regression(
     learned_polynomial_intercept,
 ) = polynomial_result.coefficients
 
+# sklearn verifies the same quadratic basis independently; its columns are [x, x**2].
 polynomial_transformer = PolynomialFeatures(
     degree=2,
     include_bias=False,
@@ -962,6 +1050,7 @@ polynomial_comparison = pd.DataFrame(
 
 polynomial_plot_cell = _new_code_cell(
     source="""
+# Sort x-values so adjacent curve points follow the polynomial.
 sorted_row_indices = np.argsort(
     a=feature_data[:, 0],
 )
@@ -977,6 +1066,7 @@ sklearn_polynomial_prediction = sklearn_polynomial_model.predict(
     ),
 )
 
+# Plot the observations and the two equivalent quadratic model curves.
 polynomial_fit_figure, polynomial_fit_axes = plt.subplots(
     nrows=1,
     ncols=1,
