@@ -1,0 +1,292 @@
+{
+  "output_directory": "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302",
+  "hardware": {
+    "cpu": "Intel Core Ultra 7 165H",
+    "logical_threads": 22,
+    "memory_gib": 63.45,
+    "gpu": "Intel Arc Pro integrated graphics",
+    "tensorflow_devices": [
+      "/device:CPU:0"
+    ],
+    "execution_strategy": "CPU/oneDNN and vectorized NumPy"
+  },
+  "dataset": {
+    "rows": 569,
+    "features": 30,
+    "missing_values": 0,
+    "malignant_rows": 212,
+    "benign_rows": 357,
+    "positive_rate": 0.6274165202108963
+  },
+  "splits": [
+    {
+      "partition": "train",
+      "rows": 398,
+      "positive_rate": 0.628140703517588
+    },
+    {
+      "partition": "validation",
+      "rows": 85,
+      "positive_rate": 0.6235294117647059
+    },
+    {
+      "partition": "test",
+      "rows": 86,
+      "positive_rate": 0.627906976744186
+    }
+  ],
+  "selected_implementation": "vectorized",
+  "validation_results": [
+    {
+      "implementation": "scalar",
+      "partition": "validation",
+      "loss": 0.06351820721469915,
+      "accuracy": 0.9647058823529412,
+      "balanced_accuracy": 0.9655070754716981,
+      "auc": 0.9976415094339622
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "validation",
+      "loss": 0.06351820721469914,
+      "accuracy": 0.9647058823529412,
+      "balanced_accuracy": 0.9655070754716981,
+      "auc": 0.9976415094339622
+    },
+    {
+      "implementation": "keras",
+      "partition": "validation",
+      "loss": 0.09099782258272171,
+      "accuracy": 0.9764705882352941,
+      "balanced_accuracy": 0.9749410377358491,
+      "auc": 0.9970518867924528
+    }
+  ],
+  "test_results": [
+    {
+      "implementation": "scalar",
+      "partition": "test",
+      "loss": 0.028398710053604333,
+      "accuracy": 0.9883720930232558,
+      "balanced_accuracy": 0.9907407407407407,
+      "auc": 1.0
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "test",
+      "loss": 0.028398710053604323,
+      "accuracy": 0.9883720930232558,
+      "balanced_accuracy": 0.9907407407407407,
+      "auc": 1.0
+    },
+    {
+      "implementation": "keras",
+      "partition": "test",
+      "loss": 0.06425369530916214,
+      "accuracy": 0.9767441860465116,
+      "balanced_accuracy": 0.9751157407407407,
+      "auc": 0.9994212962962963
+    }
+  ],
+  "quality_metrics": [
+    {
+      "implementation": "scalar",
+      "partition": "test",
+      "metric": "loss",
+      "value": 0.028398710053604333,
+      "threshold": null,
+      "passed": true
+    },
+    {
+      "implementation": "scalar",
+      "partition": "test",
+      "metric": "accuracy",
+      "value": 0.9883720930232558,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "scalar",
+      "partition": "test",
+      "metric": "balanced_accuracy",
+      "value": 0.9907407407407407,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "scalar",
+      "partition": "test",
+      "metric": "auc",
+      "value": 1.0,
+      "threshold": 0.98,
+      "passed": true
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "test",
+      "metric": "loss",
+      "value": 0.028398710053604323,
+      "threshold": null,
+      "passed": true
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "test",
+      "metric": "accuracy",
+      "value": 0.9883720930232558,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "test",
+      "metric": "balanced_accuracy",
+      "value": 0.9907407407407407,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "vectorized",
+      "partition": "test",
+      "metric": "auc",
+      "value": 1.0,
+      "threshold": 0.98,
+      "passed": true
+    },
+    {
+      "implementation": "keras",
+      "partition": "test",
+      "metric": "loss",
+      "value": 0.06425369530916214,
+      "threshold": null,
+      "passed": true
+    },
+    {
+      "implementation": "keras",
+      "partition": "test",
+      "metric": "accuracy",
+      "value": 0.9767441860465116,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "keras",
+      "partition": "test",
+      "metric": "balanced_accuracy",
+      "value": 0.9751157407407407,
+      "threshold": 0.93,
+      "passed": true
+    },
+    {
+      "implementation": "keras",
+      "partition": "test",
+      "metric": "auc",
+      "value": 0.9994212962962963,
+      "threshold": 0.98,
+      "passed": true
+    },
+    {
+      "implementation": "functions",
+      "partition": "unit test",
+      "metric": "sigmoid_derivative_max_error",
+      "value": 2.209893379401251e-11,
+      "threshold": 1e-05,
+      "passed": true
+    },
+    {
+      "implementation": "functions",
+      "partition": "unit test",
+      "metric": "bce_derivative_max_error",
+      "value": 4.7592818575026286e-11,
+      "threshold": 1e-05,
+      "passed": true
+    },
+    {
+      "implementation": "gradients",
+      "partition": "unit test",
+      "metric": "scalar_vectorized_max_difference",
+      "value": 1.1102230246251565e-16,
+      "threshold": 1e-10,
+      "passed": true
+    },
+    {
+      "implementation": "gradients",
+      "partition": "unit test",
+      "metric": "finite_difference_max_relative_error",
+      "value": 6.737838604467725e-10,
+      "threshold": 1e-05,
+      "passed": true
+    },
+    {
+      "implementation": "vectorization",
+      "partition": "validation",
+      "metric": "prediction_max_difference",
+      "value": 5.551115123125783e-17,
+      "threshold": 1e-08,
+      "passed": true
+    },
+    {
+      "implementation": "vectorization",
+      "partition": "training",
+      "metric": "speedup",
+      "value": 9.91169322077231,
+      "threshold": 1.0,
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "implementation": "scalar",
+      "epochs": 300,
+      "elapsed_seconds": 2.168731999990996
+    },
+    {
+      "implementation": "vectorized",
+      "epochs": 300,
+      "elapsed_seconds": 0.2188054000143893
+    },
+    {
+      "implementation": "keras",
+      "epochs": 70,
+      "elapsed_seconds": 10.73447110003326
+    }
+  ],
+  "gradient_checks": [
+    {
+      "parameter": "weights_1",
+      "index": "(0, 0)",
+      "numerical_gradient": -0.06139998709464578,
+      "analytic_gradient": -0.06139998717738642,
+      "relative_error": 6.737838604467725e-10
+    },
+    {
+      "parameter": "bias_1",
+      "index": "(0, 0)",
+      "numerical_gradient": -0.028411271835171448,
+      "analytic_gradient": -0.028411271845908546,
+      "relative_error": 1.8895843118880223e-10
+    },
+    {
+      "parameter": "weights_2",
+      "index": "(0, 0)",
+      "numerical_gradient": 0.295885030476839,
+      "analytic_gradient": 0.29588503059858084,
+      "relative_error": 2.057249037082719e-10
+    },
+    {
+      "parameter": "bias_2",
+      "index": "(0, 0)",
+      "numerical_gradient": -0.20225153302133592,
+      "analytic_gradient": -0.20225153315317446,
+      "relative_error": 3.259271711630236e-10
+    }
+  ],
+  "figures": [
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\class_distribution.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\scalar_training_curves.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\vectorized_training_curves.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\test_confusion_matrices.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\test_roc_curves.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\recitation\\outputs\\neural_network_recitation_20260906_181302\\keras_training_curves.png"
+  ]
+}

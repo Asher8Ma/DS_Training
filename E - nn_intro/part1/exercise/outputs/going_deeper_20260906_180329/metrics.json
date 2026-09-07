@@ -1,0 +1,628 @@
+{
+  "output_directory": "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329",
+  "hardware": {
+    "cpu": "Intel Core Ultra 7 165H",
+    "logical_threads": 22,
+    "memory_gib": 63.45,
+    "gpu": "Intel Arc Pro integrated graphics",
+    "gpu_reported_adapter_memory_gib": 2.0,
+    "tensorflow_devices": [
+      "/device:CPU:0"
+    ],
+    "execution_strategy": "Native Windows TensorFlow CPU with oneDNN"
+  },
+  "quality_metrics": [
+    {
+      "stage": "Function 1",
+      "experiment": "batch_32_units_3",
+      "metric": "test_mse",
+      "value": 1.2337695807218552e-05,
+      "threshold": 0.001,
+      "passed": true
+    },
+    {
+      "stage": "Function 2",
+      "experiment": "3x3",
+      "metric": "test_mse",
+      "value": 4.021663357889338e-08,
+      "threshold": 0.0001,
+      "passed": true
+    },
+    {
+      "stage": "Function 3",
+      "experiment": "tanh_depth_4",
+      "metric": "test_mse",
+      "value": 5.072327621746808e-05,
+      "threshold": 0.01,
+      "passed": true
+    },
+    {
+      "stage": "Sine neuron",
+      "experiment": "informed initialization",
+      "metric": "test_mse",
+      "value": 6.897751259060669e-10,
+      "threshold": 0.0001,
+      "passed": true
+    },
+    {
+      "stage": "MNIST",
+      "experiment": "dense_128_64",
+      "metric": "test_loss",
+      "value": 0.08199714124202728,
+      "threshold": null,
+      "passed": true
+    },
+    {
+      "stage": "MNIST",
+      "experiment": "dense_128_64",
+      "metric": "test_accuracy",
+      "value": 0.9764000177383423,
+      "threshold": 0.97,
+      "passed": true
+    },
+    {
+      "stage": "MNIST",
+      "experiment": "dense_128_64",
+      "metric": "test_balanced_accuracy",
+      "value": 0.9762394104939613,
+      "threshold": null,
+      "passed": true
+    },
+    {
+      "stage": "MNIST",
+      "experiment": "dense_128_64",
+      "metric": "macro_ovr_auc",
+      "value": 0.9995361835629947,
+      "threshold": 0.995,
+      "passed": true
+    },
+    {
+      "stage": "Identity",
+      "experiment": "1 hidden layer \u00d7 3 sigmoid",
+      "metric": "test_mse",
+      "value": 1.1431475286372006e-05,
+      "threshold": 0.001,
+      "passed": true
+    },
+    {
+      "stage": "Identity",
+      "experiment": "50 hidden layers \u00d7 3 sigmoid",
+      "metric": "test_mse",
+      "value": 0.08184117823839188,
+      "threshold": 1.1431475286372006e-05,
+      "passed": true
+    },
+    {
+      "stage": "Gradients",
+      "experiment": "deep_50",
+      "metric": "first_layer_max_abs_gradient",
+      "value": 4.302772519293319e-35,
+      "threshold": 1e-06,
+      "passed": true
+    }
+  ],
+  "timings": [
+    {
+      "stage": "Function 1",
+      "experiment": "batch_5_units_3",
+      "epochs": 35,
+      "elapsed_seconds": 47.28364490001695
+    },
+    {
+      "stage": "Function 1",
+      "experiment": "batch_32_units_3",
+      "epochs": 160,
+      "elapsed_seconds": 33.09533000004012
+    },
+    {
+      "stage": "Function 1",
+      "experiment": "batch_128_units_3",
+      "epochs": 160,
+      "elapsed_seconds": 17.640448999998625
+    },
+    {
+      "stage": "Function 1",
+      "experiment": "batch_32_units_1",
+      "epochs": 160,
+      "elapsed_seconds": 33.423845699988306
+    },
+    {
+      "stage": "Function 1",
+      "experiment": "batch_32_units_2",
+      "epochs": 160,
+      "elapsed_seconds": 32.85764369997196
+    },
+    {
+      "stage": "Function 2",
+      "experiment": "3",
+      "epochs": 131,
+      "elapsed_seconds": 20.10754850000376
+    },
+    {
+      "stage": "Function 2",
+      "experiment": "3x3",
+      "epochs": 500,
+      "elapsed_seconds": 65.62218370003393
+    },
+    {
+      "stage": "Function 2",
+      "experiment": "3x3x3x3",
+      "epochs": 177,
+      "elapsed_seconds": 20.35731739999028
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "tanh_depth_1",
+      "epochs": 120,
+      "elapsed_seconds": 21.676865599991288
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "tanh_depth_2",
+      "epochs": 120,
+      "elapsed_seconds": 20.832256000023335
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "tanh_depth_4",
+      "epochs": 120,
+      "elapsed_seconds": 17.78537800000049
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "relu_depth_1",
+      "epochs": 120,
+      "elapsed_seconds": 15.05824769998435
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "relu_depth_2",
+      "epochs": 120,
+      "elapsed_seconds": 15.319318900001235
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "relu_depth_4",
+      "epochs": 106,
+      "elapsed_seconds": 14.776295100047719
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "sigmoid_depth_1",
+      "epochs": 120,
+      "elapsed_seconds": 14.92101609997917
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "sigmoid_depth_2",
+      "epochs": 120,
+      "elapsed_seconds": 15.784602400031872
+    },
+    {
+      "stage": "Function 3 search",
+      "experiment": "sigmoid_depth_4",
+      "epochs": 120,
+      "elapsed_seconds": 16.97526169999037
+    },
+    {
+      "stage": "Function 3 final",
+      "experiment": "tanh_depth_4",
+      "epochs": 130,
+      "elapsed_seconds": 27.81525409995811
+    },
+    {
+      "stage": "Sine neuron",
+      "experiment": "default",
+      "epochs": 17,
+      "elapsed_seconds": 3.9812011999893
+    },
+    {
+      "stage": "Sine neuron",
+      "experiment": "informed",
+      "epochs": 16,
+      "elapsed_seconds": 3.872351800033357
+    },
+    {
+      "stage": "Sine neuron",
+      "experiment": "trajectory",
+      "epochs": 80,
+      "elapsed_seconds": 17.08089199999813
+    },
+    {
+      "stage": "MNIST",
+      "experiment": "dense_128_64",
+      "epochs": 14,
+      "elapsed_seconds": 17.13041419995716
+    },
+    {
+      "stage": "Identity",
+      "experiment": "shallow",
+      "epochs": 250,
+      "elapsed_seconds": 34.667688100016676
+    },
+    {
+      "stage": "Identity",
+      "experiment": "deep_50",
+      "epochs": 80,
+      "elapsed_seconds": 23.530671100015752
+    }
+  ],
+  "function_1_comparison": [
+    {
+      "name": "batch_5_units_3",
+      "hidden_units": 3,
+      "batch_size": 5,
+      "validation_mse": 1.6960590073722415e-05,
+      "epochs": 35,
+      "elapsed_seconds": 47.28364490001695
+    },
+    {
+      "name": "batch_32_units_3",
+      "hidden_units": 3,
+      "batch_size": 32,
+      "validation_mse": 1.2725908163702115e-05,
+      "epochs": 160,
+      "elapsed_seconds": 33.09533000004012
+    },
+    {
+      "name": "batch_128_units_3",
+      "hidden_units": 3,
+      "batch_size": 128,
+      "validation_mse": 1.3575886441685725e-05,
+      "epochs": 160,
+      "elapsed_seconds": 17.640448999998625
+    },
+    {
+      "name": "batch_32_units_1",
+      "hidden_units": 1,
+      "batch_size": 32,
+      "validation_mse": 2.158474671887234e-05,
+      "epochs": 160,
+      "elapsed_seconds": 33.423845699988306
+    },
+    {
+      "name": "batch_32_units_2",
+      "hidden_units": 2,
+      "batch_size": 32,
+      "validation_mse": 1.7403675883542746e-05,
+      "epochs": 160,
+      "elapsed_seconds": 32.85764369997196
+    }
+  ],
+  "function_2_comparison": [
+    {
+      "architecture": "3",
+      "depth": 1,
+      "validation_mse": 9.79464402917074e-06,
+      "epochs": 131,
+      "elapsed_seconds": 20.10754850000376
+    },
+    {
+      "architecture": "3x3",
+      "depth": 2,
+      "validation_mse": 3.679339855011676e-08,
+      "epochs": 500,
+      "elapsed_seconds": 65.62218370003393
+    },
+    {
+      "architecture": "3x3x3x3",
+      "depth": 4,
+      "validation_mse": 1.906925353978295e-05,
+      "epochs": 177,
+      "elapsed_seconds": 20.35731739999028
+    }
+  ],
+  "function_3_comparison": [
+    {
+      "activation": "tanh",
+      "depth": 1,
+      "configuration": "tanh_depth_1",
+      "validation_mse": 0.4429710805416107,
+      "epochs": 120,
+      "elapsed_seconds": 21.676865599991288
+    },
+    {
+      "activation": "tanh",
+      "depth": 2,
+      "configuration": "tanh_depth_2",
+      "validation_mse": 0.23116914927959442,
+      "epochs": 120,
+      "elapsed_seconds": 20.832256000023335
+    },
+    {
+      "activation": "tanh",
+      "depth": 4,
+      "configuration": "tanh_depth_4",
+      "validation_mse": 0.00014993749209679663,
+      "epochs": 120,
+      "elapsed_seconds": 17.78537800000049
+    },
+    {
+      "activation": "relu",
+      "depth": 1,
+      "configuration": "relu_depth_1",
+      "validation_mse": 0.4704517424106598,
+      "epochs": 120,
+      "elapsed_seconds": 15.05824769998435
+    },
+    {
+      "activation": "relu",
+      "depth": 2,
+      "configuration": "relu_depth_2",
+      "validation_mse": 0.2701249420642853,
+      "epochs": 120,
+      "elapsed_seconds": 15.319318900001235
+    },
+    {
+      "activation": "relu",
+      "depth": 4,
+      "configuration": "relu_depth_4",
+      "validation_mse": 0.023473188281059265,
+      "epochs": 106,
+      "elapsed_seconds": 14.776295100047719
+    },
+    {
+      "activation": "sigmoid",
+      "depth": 1,
+      "configuration": "sigmoid_depth_1",
+      "validation_mse": 0.43317699432373047,
+      "epochs": 120,
+      "elapsed_seconds": 14.92101609997917
+    },
+    {
+      "activation": "sigmoid",
+      "depth": 2,
+      "configuration": "sigmoid_depth_2",
+      "validation_mse": 0.427773654460907,
+      "epochs": 120,
+      "elapsed_seconds": 15.784602400031872
+    },
+    {
+      "activation": "sigmoid",
+      "depth": 4,
+      "configuration": "sigmoid_depth_4",
+      "validation_mse": 0.26684942841529846,
+      "epochs": 120,
+      "elapsed_seconds": 16.97526169999037
+    }
+  ],
+  "sine_comparison": [
+    {
+      "initialization": "default",
+      "validation_mse": 0.48945948481559753,
+      "test_mse": 0.4882393181324005,
+      "learned_a": -0.05777205899357796,
+      "learned_b": 0.16814351081848145,
+      "epochs": 17,
+      "elapsed_seconds": 3.9812011999893
+    },
+    {
+      "initialization": "informed",
+      "validation_mse": 8.804145563631738e-13,
+      "test_mse": 6.897751259060669e-10,
+      "learned_a": 6.283178329467773,
+      "learned_b": -1.384027382300701e-05,
+      "epochs": 16,
+      "elapsed_seconds": 3.872351800033357
+    }
+  ],
+  "gradients": [
+    {
+      "layer_number": 1,
+      "maximum_absolute_gradient": 4.302772519293319e-35
+    },
+    {
+      "layer_number": 2,
+      "maximum_absolute_gradient": 1.1835761040729311e-34
+    },
+    {
+      "layer_number": 3,
+      "maximum_absolute_gradient": 1.2551741563256964e-34
+    },
+    {
+      "layer_number": 4,
+      "maximum_absolute_gradient": 4.519916746398298e-34
+    },
+    {
+      "layer_number": 5,
+      "maximum_absolute_gradient": 3.085277410933041e-33
+    },
+    {
+      "layer_number": 6,
+      "maximum_absolute_gradient": 7.748810271478548e-33
+    },
+    {
+      "layer_number": 7,
+      "maximum_absolute_gradient": 1.026616815796294e-31
+    },
+    {
+      "layer_number": 8,
+      "maximum_absolute_gradient": 5.729567763506795e-31
+    },
+    {
+      "layer_number": 9,
+      "maximum_absolute_gradient": 3.358519767982952e-30
+    },
+    {
+      "layer_number": 10,
+      "maximum_absolute_gradient": 8.604793937736739e-30
+    },
+    {
+      "layer_number": 11,
+      "maximum_absolute_gradient": 3.6610959259298084e-29
+    },
+    {
+      "layer_number": 12,
+      "maximum_absolute_gradient": 1.9523352865191355e-28
+    },
+    {
+      "layer_number": 13,
+      "maximum_absolute_gradient": 4.129944913444545e-28
+    },
+    {
+      "layer_number": 14,
+      "maximum_absolute_gradient": 1.69503713670245e-27
+    },
+    {
+      "layer_number": 15,
+      "maximum_absolute_gradient": 6.307047707830964e-27
+    },
+    {
+      "layer_number": 16,
+      "maximum_absolute_gradient": 2.701468652922537e-26
+    },
+    {
+      "layer_number": 17,
+      "maximum_absolute_gradient": 7.87222847877272e-26
+    },
+    {
+      "layer_number": 18,
+      "maximum_absolute_gradient": 5.274455653471244e-25
+    },
+    {
+      "layer_number": 19,
+      "maximum_absolute_gradient": 1.7641535053881316e-24
+    },
+    {
+      "layer_number": 20,
+      "maximum_absolute_gradient": 6.417796827087267e-24
+    },
+    {
+      "layer_number": 21,
+      "maximum_absolute_gradient": 5.1927630522281603e-23
+    },
+    {
+      "layer_number": 22,
+      "maximum_absolute_gradient": 6.485992653275047e-22
+    },
+    {
+      "layer_number": 23,
+      "maximum_absolute_gradient": 1.4841930478802783e-21
+    },
+    {
+      "layer_number": 24,
+      "maximum_absolute_gradient": 4.2626975722073e-21
+    },
+    {
+      "layer_number": 25,
+      "maximum_absolute_gradient": 2.5976195114072812e-20
+    },
+    {
+      "layer_number": 26,
+      "maximum_absolute_gradient": 1.2831341984196206e-19
+    },
+    {
+      "layer_number": 27,
+      "maximum_absolute_gradient": 4.944574475136526e-19
+    },
+    {
+      "layer_number": 28,
+      "maximum_absolute_gradient": 1.4085361751499432e-18
+    },
+    {
+      "layer_number": 29,
+      "maximum_absolute_gradient": 1.0505603233826665e-17
+    },
+    {
+      "layer_number": 30,
+      "maximum_absolute_gradient": 7.552773091495902e-17
+    },
+    {
+      "layer_number": 31,
+      "maximum_absolute_gradient": 1.976802315928534e-16
+    },
+    {
+      "layer_number": 32,
+      "maximum_absolute_gradient": 6.245212036588583e-16
+    },
+    {
+      "layer_number": 33,
+      "maximum_absolute_gradient": 2.4919417081854713e-15
+    },
+    {
+      "layer_number": 34,
+      "maximum_absolute_gradient": 5.7381611737032136e-15
+    },
+    {
+      "layer_number": 35,
+      "maximum_absolute_gradient": 6.976286681583538e-14
+    },
+    {
+      "layer_number": 36,
+      "maximum_absolute_gradient": 5.464123077614236e-13
+    },
+    {
+      "layer_number": 37,
+      "maximum_absolute_gradient": 4.4688389273794815e-12
+    },
+    {
+      "layer_number": 38,
+      "maximum_absolute_gradient": 1.6140130898456562e-11
+    },
+    {
+      "layer_number": 39,
+      "maximum_absolute_gradient": 4.646408952035941e-11
+    },
+    {
+      "layer_number": 40,
+      "maximum_absolute_gradient": 3.0921690208352004e-10
+    },
+    {
+      "layer_number": 41,
+      "maximum_absolute_gradient": 8.586302779889365e-10
+    },
+    {
+      "layer_number": 42,
+      "maximum_absolute_gradient": 7.82512810104663e-09
+    },
+    {
+      "layer_number": 43,
+      "maximum_absolute_gradient": 3.5980903589916124e-08
+    },
+    {
+      "layer_number": 44,
+      "maximum_absolute_gradient": 1.2111861735775165e-07
+    },
+    {
+      "layer_number": 45,
+      "maximum_absolute_gradient": 5.613298981188564e-07
+    },
+    {
+      "layer_number": 46,
+      "maximum_absolute_gradient": 2.6113184503628872e-06
+    },
+    {
+      "layer_number": 47,
+      "maximum_absolute_gradient": 1.3023194696870632e-05
+    },
+    {
+      "layer_number": 48,
+      "maximum_absolute_gradient": 4.975633419235237e-05
+    },
+    {
+      "layer_number": 49,
+      "maximum_absolute_gradient": 0.00023894422338344157
+    },
+    {
+      "layer_number": 50,
+      "maximum_absolute_gradient": 0.0011889408342540264
+    },
+    {
+      "layer_number": 51,
+      "maximum_absolute_gradient": 0.0259432140737772
+    }
+  ],
+  "figures": [
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\function_1_data.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\function_1_fit.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\function_2_fit.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\function_3_fit.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\sine_loss_surface.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\tanh_loss_surface.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\sine_optimization_trajectory.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\mnist_confusion_matrix.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\identity_shallow_fit.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\identity_deep_fit.png",
+    "C:\\Users\\asherk\\PycharmProjects\\DS_Training\\E - nn_intro\\part1\\exercise\\outputs\\going_deeper_20260906_180329\\deep_gradient_profile.png"
+  ]
+}

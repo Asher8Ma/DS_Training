@@ -1,0 +1,1857 @@
+{
+  "seed": 42,
+  "results": [
+    {
+      "model": "CIFAR dense",
+      "partition": "train",
+      "samples": 45000,
+      "loss": 0.8243982791900635,
+      "accuracy": 0.7058888888888889,
+      "balanced_accuracy": 0.7058888888888888,
+      "macro_auc": 0.9594955689986282,
+      "confusion_matrix": [
+        [
+          3287,
+          99,
+          109,
+          82,
+          120,
+          61,
+          68,
+          64,
+          447,
+          163
+        ],
+        [
+          87,
+          3771,
+          14,
+          25,
+          25,
+          13,
+          14,
+          11,
+          158,
+          382
+        ],
+        [
+          301,
+          43,
+          2203,
+          232,
+          829,
+          228,
+          369,
+          161,
+          72,
+          62
+        ],
+        [
+          99,
+          39,
+          225,
+          2361,
+          235,
+          835,
+          399,
+          98,
+          122,
+          87
+        ],
+        [
+          162,
+          19,
+          273,
+          151,
+          3089,
+          159,
+          298,
+          203,
+          98,
+          48
+        ],
+        [
+          60,
+          17,
+          212,
+          527,
+          278,
+          2915,
+          242,
+          121,
+          98,
+          30
+        ],
+        [
+          33,
+          26,
+          165,
+          204,
+          321,
+          131,
+          3546,
+          16,
+          32,
+          26
+        ],
+        [
+          89,
+          24,
+          88,
+          169,
+          327,
+          238,
+          55,
+          3322,
+          71,
+          117
+        ],
+        [
+          308,
+          129,
+          38,
+          44,
+          84,
+          32,
+          23,
+          10,
+          3690,
+          142
+        ],
+        [
+          91,
+          296,
+          29,
+          64,
+          43,
+          62,
+          39,
+          81,
+          214,
+          3581
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.7276953730352004,
+          "recall": 0.7304444444444445,
+          "f1-score": 0.7290673172895642,
+          "support": 4500.0
+        },
+        "automobile": {
+          "precision": 0.8449473448353125,
+          "recall": 0.838,
+          "f1-score": 0.8414593328126744,
+          "support": 4500.0
+        },
+        "bird": {
+          "precision": 0.6564362336114422,
+          "recall": 0.4895555555555556,
+          "f1-score": 0.5608452138492872,
+          "support": 4500.0
+        },
+        "cat": {
+          "precision": 0.6118165327805131,
+          "recall": 0.5246666666666666,
+          "f1-score": 0.5649001076683814,
+          "support": 4500.0
+        },
+        "deer": {
+          "precision": 0.5772752756494113,
+          "recall": 0.6864444444444444,
+          "f1-score": 0.6271444523398639,
+          "support": 4500.0
+        },
+        "dog": {
+          "precision": 0.6236628155755242,
+          "recall": 0.6477777777777778,
+          "f1-score": 0.6354916067146283,
+          "support": 4500.0
+        },
+        "frog": {
+          "precision": 0.7017613299030279,
+          "recall": 0.788,
+          "f1-score": 0.7423845912278866,
+          "support": 4500.0
+        },
+        "horse": {
+          "precision": 0.8128211402006361,
+          "recall": 0.7382222222222222,
+          "f1-score": 0.7737277279608711,
+          "support": 4500.0
+        },
+        "ship": {
+          "precision": 0.7377049180327869,
+          "recall": 0.82,
+          "f1-score": 0.7766785939802147,
+          "support": 4500.0
+        },
+        "truck": {
+          "precision": 0.7721000431220354,
+          "recall": 0.7957777777777778,
+          "f1-score": 0.7837601225651127,
+          "support": 4500.0
+        },
+        "accuracy": 0.7058888888888889,
+        "macro avg": {
+          "precision": 0.706622100674589,
+          "recall": 0.7058888888888888,
+          "f1-score": 0.7035459066408485,
+          "support": 45000.0
+        },
+        "weighted avg": {
+          "precision": 0.706622100674589,
+          "recall": 0.7058888888888889,
+          "f1-score": 0.7035459066408484,
+          "support": 45000.0
+        }
+      }
+    },
+    {
+      "model": "CIFAR dense",
+      "partition": "validation",
+      "samples": 5000,
+      "loss": 1.5870685577392578,
+      "accuracy": 0.513,
+      "balanced_accuracy": 0.513,
+      "macro_auc": 0.8795666000000001,
+      "confusion_matrix": [
+        [
+          281,
+          29,
+          22,
+          12,
+          20,
+          11,
+          13,
+          27,
+          57,
+          28
+        ],
+        [
+          24,
+          303,
+          9,
+          15,
+          13,
+          9,
+          3,
+          6,
+          32,
+          86
+        ],
+        [
+          39,
+          12,
+          151,
+          43,
+          97,
+          49,
+          58,
+          31,
+          14,
+          6
+        ],
+        [
+          16,
+          9,
+          30,
+          137,
+          40,
+          128,
+          71,
+          26,
+          22,
+          21
+        ],
+        [
+          27,
+          5,
+          50,
+          21,
+          267,
+          19,
+          59,
+          34,
+          10,
+          8
+        ],
+        [
+          12,
+          7,
+          39,
+          86,
+          36,
+          219,
+          45,
+          31,
+          18,
+          7
+        ],
+        [
+          3,
+          11,
+          40,
+          43,
+          49,
+          41,
+          295,
+          3,
+          10,
+          5
+        ],
+        [
+          15,
+          11,
+          21,
+          35,
+          59,
+          36,
+          21,
+          261,
+          9,
+          32
+        ],
+        [
+          42,
+          35,
+          9,
+          9,
+          11,
+          8,
+          4,
+          3,
+          351,
+          28
+        ],
+        [
+          18,
+          82,
+          8,
+          12,
+          9,
+          16,
+          10,
+          16,
+          29,
+          300
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.589098532494759,
+          "recall": 0.562,
+          "f1-score": 0.5752302968270215,
+          "support": 500.0
+        },
+        "automobile": {
+          "precision": 0.6011904761904762,
+          "recall": 0.606,
+          "f1-score": 0.603585657370518,
+          "support": 500.0
+        },
+        "bird": {
+          "precision": 0.39841688654353563,
+          "recall": 0.302,
+          "f1-score": 0.3435722411831627,
+          "support": 500.0
+        },
+        "cat": {
+          "precision": 0.33171912832929784,
+          "recall": 0.274,
+          "f1-score": 0.30010952902519167,
+          "support": 500.0
+        },
+        "deer": {
+          "precision": 0.4442595673876872,
+          "recall": 0.534,
+          "f1-score": 0.48501362397820164,
+          "support": 500.0
+        },
+        "dog": {
+          "precision": 0.4085820895522388,
+          "recall": 0.438,
+          "f1-score": 0.42277992277992277,
+          "support": 500.0
+        },
+        "frog": {
+          "precision": 0.5094991364421416,
+          "recall": 0.59,
+          "f1-score": 0.5468025949953661,
+          "support": 500.0
+        },
+        "horse": {
+          "precision": 0.5958904109589042,
+          "recall": 0.522,
+          "f1-score": 0.5565031982942431,
+          "support": 500.0
+        },
+        "ship": {
+          "precision": 0.6358695652173914,
+          "recall": 0.702,
+          "f1-score": 0.6673003802281369,
+          "support": 500.0
+        },
+        "truck": {
+          "precision": 0.5758157389635317,
+          "recall": 0.6,
+          "f1-score": 0.5876591576885406,
+          "support": 500.0
+        },
+        "accuracy": 0.513,
+        "macro avg": {
+          "precision": 0.5090341532079964,
+          "recall": 0.513,
+          "f1-score": 0.5088556602370305,
+          "support": 5000.0
+        },
+        "weighted avg": {
+          "precision": 0.5090341532079963,
+          "recall": 0.513,
+          "f1-score": 0.5088556602370305,
+          "support": 5000.0
+        }
+      }
+    },
+    {
+      "model": "CIFAR dense",
+      "partition": "test",
+      "samples": 10000,
+      "loss": 1.5491632223129272,
+      "accuracy": 0.5177,
+      "balanced_accuracy": 0.5176999999999999,
+      "macro_auc": 0.882699538888889,
+      "confusion_matrix": [
+        [
+          618,
+          47,
+          39,
+          27,
+          39,
+          26,
+          19,
+          17,
+          122,
+          46
+        ],
+        [
+          37,
+          613,
+          20,
+          23,
+          15,
+          20,
+          7,
+          19,
+          67,
+          179
+        ],
+        [
+          87,
+          25,
+          314,
+          85,
+          177,
+          102,
+          104,
+          69,
+          23,
+          14
+        ],
+        [
+          37,
+          25,
+          67,
+          296,
+          78,
+          239,
+          137,
+          44,
+          38,
+          39
+        ],
+        [
+          55,
+          14,
+          91,
+          47,
+          493,
+          60,
+          130,
+          63,
+          35,
+          12
+        ],
+        [
+          20,
+          16,
+          73,
+          162,
+          86,
+          442,
+          81,
+          55,
+          40,
+          25
+        ],
+        [
+          12,
+          22,
+          60,
+          69,
+          132,
+          64,
+          597,
+          16,
+          15,
+          13
+        ],
+        [
+          38,
+          12,
+          35,
+          58,
+          116,
+          89,
+          43,
+          546,
+          19,
+          44
+        ],
+        [
+          97,
+          56,
+          15,
+          32,
+          29,
+          16,
+          11,
+          9,
+          674,
+          61
+        ],
+        [
+          31,
+          154,
+          8,
+          27,
+          19,
+          32,
+          23,
+          39,
+          83,
+          584
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.5988372093023255,
+          "recall": 0.618,
+          "f1-score": 0.6082677165354331,
+          "support": 1000.0
+        },
+        "automobile": {
+          "precision": 0.6229674796747967,
+          "recall": 0.613,
+          "f1-score": 0.6179435483870968,
+          "support": 1000.0
+        },
+        "bird": {
+          "precision": 0.43490304709141275,
+          "recall": 0.314,
+          "f1-score": 0.36469221835075494,
+          "support": 1000.0
+        },
+        "cat": {
+          "precision": 0.3583535108958838,
+          "recall": 0.296,
+          "f1-score": 0.32420591456736036,
+          "support": 1000.0
+        },
+        "deer": {
+          "precision": 0.41638513513513514,
+          "recall": 0.493,
+          "f1-score": 0.45146520146520147,
+          "support": 1000.0
+        },
+        "dog": {
+          "precision": 0.4055045871559633,
+          "recall": 0.442,
+          "f1-score": 0.4229665071770335,
+          "support": 1000.0
+        },
+        "frog": {
+          "precision": 0.5182291666666666,
+          "recall": 0.597,
+          "f1-score": 0.5548327137546468,
+          "support": 1000.0
+        },
+        "horse": {
+          "precision": 0.6225769669327252,
+          "recall": 0.546,
+          "f1-score": 0.5817794352690463,
+          "support": 1000.0
+        },
+        "ship": {
+          "precision": 0.6039426523297491,
+          "recall": 0.674,
+          "f1-score": 0.6370510396975425,
+          "support": 1000.0
+        },
+        "truck": {
+          "precision": 0.5742379547689282,
+          "recall": 0.584,
+          "f1-score": 0.5790778383738225,
+          "support": 1000.0
+        },
+        "accuracy": 0.5177,
+        "macro avg": {
+          "precision": 0.5155937709953586,
+          "recall": 0.5176999999999999,
+          "f1-score": 0.5142282133577938,
+          "support": 10000.0
+        },
+        "weighted avg": {
+          "precision": 0.5155937709953586,
+          "recall": 0.5177,
+          "f1-score": 0.5142282133577938,
+          "support": 10000.0
+        }
+      }
+    },
+    {
+      "model": "CIFAR CNN",
+      "partition": "train",
+      "samples": 45000,
+      "loss": 0.28766244649887085,
+      "accuracy": 0.9011333333333333,
+      "balanced_accuracy": 0.9011333333333333,
+      "macro_auc": 0.994555863100137,
+      "confusion_matrix": [
+        [
+          4137,
+          8,
+          111,
+          55,
+          25,
+          6,
+          23,
+          2,
+          103,
+          30
+        ],
+        [
+          8,
+          4275,
+          5,
+          4,
+          0,
+          6,
+          15,
+          1,
+          23,
+          163
+        ],
+        [
+          108,
+          1,
+          3888,
+          97,
+          153,
+          48,
+          184,
+          8,
+          11,
+          2
+        ],
+        [
+          17,
+          1,
+          148,
+          3716,
+          103,
+          258,
+          236,
+          7,
+          8,
+          6
+        ],
+        [
+          21,
+          0,
+          116,
+          102,
+          4057,
+          41,
+          126,
+          29,
+          7,
+          1
+        ],
+        [
+          7,
+          2,
+          125,
+          509,
+          133,
+          3581,
+          103,
+          34,
+          3,
+          3
+        ],
+        [
+          3,
+          0,
+          71,
+          43,
+          24,
+          9,
+          4345,
+          1,
+          4,
+          0
+        ],
+        [
+          13,
+          0,
+          116,
+          124,
+          196,
+          175,
+          36,
+          3826,
+          5,
+          9
+        ],
+        [
+          65,
+          9,
+          15,
+          13,
+          5,
+          2,
+          13,
+          1,
+          4358,
+          19
+        ],
+        [
+          25,
+          29,
+          9,
+          17,
+          4,
+          5,
+          17,
+          1,
+          25,
+          4368
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.9393732970027248,
+          "recall": 0.9193333333333333,
+          "f1-score": 0.9292452830188679,
+          "support": 4500.0
+        },
+        "automobile": {
+          "precision": 0.9884393063583815,
+          "recall": 0.95,
+          "f1-score": 0.9688385269121813,
+          "support": 4500.0
+        },
+        "bird": {
+          "precision": 0.8444830582102519,
+          "recall": 0.864,
+          "f1-score": 0.8541300527240774,
+          "support": 4500.0
+        },
+        "cat": {
+          "precision": 0.794017094017094,
+          "recall": 0.8257777777777778,
+          "f1-score": 0.8095860566448801,
+          "support": 4500.0
+        },
+        "deer": {
+          "precision": 0.8631914893617021,
+          "recall": 0.9015555555555556,
+          "f1-score": 0.8819565217391304,
+          "support": 4500.0
+        },
+        "dog": {
+          "precision": 0.8668603243766643,
+          "recall": 0.7957777777777778,
+          "f1-score": 0.829799559726567,
+          "support": 4500.0
+        },
+        "frog": {
+          "precision": 0.852295017653982,
+          "recall": 0.9655555555555555,
+          "f1-score": 0.9053969576995208,
+          "support": 4500.0
+        },
+        "horse": {
+          "precision": 0.9785166240409208,
+          "recall": 0.8502222222222222,
+          "f1-score": 0.9098692033293698,
+          "support": 4500.0
+        },
+        "ship": {
+          "precision": 0.9584341323949856,
+          "recall": 0.9684444444444444,
+          "f1-score": 0.9634132861722118,
+          "support": 4500.0
+        },
+        "truck": {
+          "precision": 0.9493588350358617,
+          "recall": 0.9706666666666667,
+          "f1-score": 0.9598945170860345,
+          "support": 4500.0
+        },
+        "accuracy": 0.9011333333333333,
+        "macro avg": {
+          "precision": 0.9034969178452569,
+          "recall": 0.9011333333333333,
+          "f1-score": 0.9012129965052841,
+          "support": 45000.0
+        },
+        "weighted avg": {
+          "precision": 0.9034969178452569,
+          "recall": 0.9011333333333333,
+          "f1-score": 0.9012129965052841,
+          "support": 45000.0
+        }
+      }
+    },
+    {
+      "model": "CIFAR CNN",
+      "partition": "validation",
+      "samples": 5000,
+      "loss": 0.6352826356887817,
+      "accuracy": 0.7884,
+      "balanced_accuracy": 0.7884000000000001,
+      "macro_auc": 0.9770332444444445,
+      "confusion_matrix": [
+        [
+          396,
+          5,
+          30,
+          10,
+          12,
+          3,
+          2,
+          3,
+          28,
+          11
+        ],
+        [
+          10,
+          435,
+          0,
+          2,
+          0,
+          2,
+          7,
+          0,
+          10,
+          34
+        ],
+        [
+          25,
+          1,
+          352,
+          24,
+          38,
+          13,
+          33,
+          6,
+          6,
+          2
+        ],
+        [
+          7,
+          0,
+          34,
+          321,
+          21,
+          60,
+          43,
+          2,
+          6,
+          6
+        ],
+        [
+          3,
+          0,
+          31,
+          28,
+          395,
+          11,
+          19,
+          12,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          25,
+          100,
+          18,
+          322,
+          15,
+          16,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          23,
+          13,
+          9,
+          2,
+          449,
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          26,
+          26,
+          42,
+          32,
+          11,
+          355,
+          1,
+          1
+        ],
+        [
+          10,
+          5,
+          7,
+          2,
+          4,
+          0,
+          2,
+          0,
+          463,
+          7
+        ],
+        [
+          6,
+          16,
+          4,
+          8,
+          0,
+          2,
+          5,
+          1,
+          4,
+          454
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.8497854077253219,
+          "recall": 0.792,
+          "f1-score": 0.8198757763975155,
+          "support": 500.0
+        },
+        "automobile": {
+          "precision": 0.9395248380129589,
+          "recall": 0.87,
+          "f1-score": 0.9034267912772586,
+          "support": 500.0
+        },
+        "bird": {
+          "precision": 0.6616541353383458,
+          "recall": 0.704,
+          "f1-score": 0.6821705426356589,
+          "support": 500.0
+        },
+        "cat": {
+          "precision": 0.601123595505618,
+          "recall": 0.642,
+          "f1-score": 0.620889748549323,
+          "support": 500.0
+        },
+        "deer": {
+          "precision": 0.7328385899814471,
+          "recall": 0.79,
+          "f1-score": 0.7603464870067372,
+          "support": 500.0
+        },
+        "dog": {
+          "precision": 0.7203579418344519,
+          "recall": 0.644,
+          "f1-score": 0.6800422386483632,
+          "support": 500.0
+        },
+        "frog": {
+          "precision": 0.7662116040955631,
+          "recall": 0.898,
+          "f1-score": 0.8268876611418048,
+          "support": 500.0
+        },
+        "horse": {
+          "precision": 0.8964646464646465,
+          "recall": 0.71,
+          "f1-score": 0.7924107142857143,
+          "support": 500.0
+        },
+        "ship": {
+          "precision": 0.8903846153846153,
+          "recall": 0.926,
+          "f1-score": 0.907843137254902,
+          "support": 500.0
+        },
+        "truck": {
+          "precision": 0.8781431334622823,
+          "recall": 0.908,
+          "f1-score": 0.8928220255653884,
+          "support": 500.0
+        },
+        "accuracy": 0.7884,
+        "macro avg": {
+          "precision": 0.793648850780525,
+          "recall": 0.7884000000000001,
+          "f1-score": 0.7886715122762666,
+          "support": 5000.0
+        },
+        "weighted avg": {
+          "precision": 0.7936488507805252,
+          "recall": 0.7884,
+          "f1-score": 0.7886715122762666,
+          "support": 5000.0
+        }
+      }
+    },
+    {
+      "model": "CIFAR CNN",
+      "partition": "test",
+      "samples": 10000,
+      "loss": 0.6434577107429504,
+      "accuracy": 0.7862,
+      "balanced_accuracy": 0.7862,
+      "macro_auc": 0.9767913833333332,
+      "confusion_matrix": [
+        [
+          804,
+          10,
+          57,
+          20,
+          14,
+          2,
+          16,
+          1,
+          46,
+          30
+        ],
+        [
+          14,
+          867,
+          1,
+          7,
+          1,
+          2,
+          11,
+          2,
+          15,
+          80
+        ],
+        [
+          47,
+          0,
+          706,
+          46,
+          80,
+          34,
+          65,
+          8,
+          9,
+          5
+        ],
+        [
+          16,
+          1,
+          62,
+          625,
+          56,
+          119,
+          87,
+          9,
+          14,
+          11
+        ],
+        [
+          8,
+          2,
+          48,
+          48,
+          789,
+          19,
+          65,
+          17,
+          2,
+          2
+        ],
+        [
+          8,
+          0,
+          60,
+          160,
+          40,
+          674,
+          27,
+          29,
+          1,
+          1
+        ],
+        [
+          5,
+          0,
+          39,
+          29,
+          17,
+          7,
+          897,
+          2,
+          4,
+          0
+        ],
+        [
+          16,
+          1,
+          45,
+          50,
+          71,
+          70,
+          16,
+          724,
+          1,
+          6
+        ],
+        [
+          51,
+          11,
+          16,
+          13,
+          1,
+          1,
+          8,
+          0,
+          878,
+          21
+        ],
+        [
+          19,
+          30,
+          8,
+          8,
+          3,
+          2,
+          9,
+          4,
+          19,
+          898
+        ]
+      ],
+      "classification_report": {
+        "airplane": {
+          "precision": 0.8137651821862348,
+          "recall": 0.804,
+          "f1-score": 0.8088531187122736,
+          "support": 1000.0
+        },
+        "automobile": {
+          "precision": 0.940347071583514,
+          "recall": 0.867,
+          "f1-score": 0.9021852237252862,
+          "support": 1000.0
+        },
+        "bird": {
+          "precision": 0.6775431861804223,
+          "recall": 0.706,
+          "f1-score": 0.6914789422135161,
+          "support": 1000.0
+        },
+        "cat": {
+          "precision": 0.621272365805169,
+          "recall": 0.625,
+          "f1-score": 0.6231306081754736,
+          "support": 1000.0
+        },
+        "deer": {
+          "precision": 0.7360074626865671,
+          "recall": 0.789,
+          "f1-score": 0.7615830115830116,
+          "support": 1000.0
+        },
+        "dog": {
+          "precision": 0.7247311827956989,
+          "recall": 0.674,
+          "f1-score": 0.6984455958549223,
+          "support": 1000.0
+        },
+        "frog": {
+          "precision": 0.7468776019983348,
+          "recall": 0.897,
+          "f1-score": 0.8150840527033166,
+          "support": 1000.0
+        },
+        "horse": {
+          "precision": 0.9095477386934674,
+          "recall": 0.724,
+          "f1-score": 0.8062360801781737,
+          "support": 1000.0
+        },
+        "ship": {
+          "precision": 0.8877654196157735,
+          "recall": 0.878,
+          "f1-score": 0.8828557063851181,
+          "support": 1000.0
+        },
+        "truck": {
+          "precision": 0.8519924098671727,
+          "recall": 0.898,
+          "f1-score": 0.8743914313534566,
+          "support": 1000.0
+        },
+        "accuracy": 0.7862,
+        "macro avg": {
+          "precision": 0.7909849621412354,
+          "recall": 0.7862,
+          "f1-score": 0.7864243770884549,
+          "support": 10000.0
+        },
+        "weighted avg": {
+          "precision": 0.7909849621412355,
+          "recall": 0.7862,
+          "f1-score": 0.7864243770884548,
+          "support": 10000.0
+        }
+      }
+    },
+    {
+      "model": "VGGFace neural head",
+      "partition": "train",
+      "samples": 228,
+      "loss": 0.0036888974718749523,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          76,
+          0
+        ],
+        [
+          0,
+          0,
+          81
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 71.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 76.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 81.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        }
+      }
+    },
+    {
+      "model": "VGGFace neural head",
+      "partition": "validation",
+      "samples": 57,
+      "loss": 0.005287711508572102,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 19.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        }
+      }
+    },
+    {
+      "model": "VGGFace neural head",
+      "partition": "test",
+      "samples": 72,
+      "loss": 0.0036183781921863556,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          25
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 23.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6",
+      "partition": "train",
+      "samples": 228,
+      "loss": 0.01905973710935896,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          76,
+          0
+        ],
+        [
+          0,
+          0,
+          81
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 71.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 76.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 81.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6",
+      "partition": "validation",
+      "samples": 57,
+      "loss": 0.021434559640002262,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 19.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6",
+      "partition": "test",
+      "samples": 72,
+      "loss": 0.026259395390468745,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          25
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 23.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6_relu",
+      "partition": "train",
+      "samples": 228,
+      "loss": 0.01693863767913463,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          71,
+          0,
+          0
+        ],
+        [
+          0,
+          76,
+          0
+        ],
+        [
+          0,
+          0,
+          81
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 71.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 76.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 81.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 228.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6_relu",
+      "partition": "validation",
+      "samples": 57,
+      "loss": 0.019459012963948155,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          19,
+          0
+        ],
+        [
+          0,
+          0,
+          20
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 19.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 57.0
+        }
+      }
+    },
+    {
+      "model": "Linear SVM fc6_relu",
+      "partition": "test",
+      "samples": 72,
+      "loss": 0.02221990271885526,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_auc": 1.0,
+      "confusion_matrix": [
+        [
+          23,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          0
+        ],
+        [
+          0,
+          0,
+          25
+        ]
+      ],
+      "classification_report": {
+        "Alicia Vikander": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 23.0
+        },
+        "Amy Adams": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 24.0
+        },
+        "Andy Serkis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 25.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 72.0
+        }
+      }
+    }
+  ],
+  "training": [
+    {
+      "model": "CIFAR dense",
+      "epochs": 40,
+      "seconds": 129.39296159998048,
+      "parameters": 1662360,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 128
+    },
+    {
+      "model": "CIFAR CNN",
+      "epochs": 40,
+      "seconds": 553.6743932000245,
+      "parameters": 387778,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 128
+    },
+    {
+      "model": "VGGFace neural head",
+      "epochs": 5,
+      "seconds": 176.39840139995795,
+      "parameters": 117889235,
+      "optimizer": "SGD",
+      "learning_rate": 0.01,
+      "batch_size": 20
+    },
+    {
+      "model": "Linear SVM fc6",
+      "epochs": null,
+      "seconds": 0.24358599999686703,
+      "parameters": null,
+      "optimizer": "libsvm",
+      "learning_rate": null,
+      "batch_size": null
+    },
+    {
+      "model": "Linear SVM fc6_relu",
+      "epochs": null,
+      "seconds": 0.33184699999401346,
+      "parameters": null,
+      "optimizer": "libsvm",
+      "learning_rate": null,
+      "batch_size": null
+    }
+  ],
+  "selected_cifar_model": "CIFAR CNN",
+  "selected_face_model": "VGGFace neural head",
+  "face_class_names": [
+    "Alicia Vikander",
+    "Amy Adams",
+    "Andy Serkis"
+  ],
+  "cifar_class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "assets": {
+    "faces.zip": {
+      "url": "https://drive.google.com/uc?export=download&id=1go4U-nI4H5kBz6hstI4_PYtzS35jHEDM",
+      "bytes": 42049344,
+      "sha256": "81e574f12e71f1dc14e99333c2bba62f8610d38f854020ec4e1d5c98aa8f4332"
+    },
+    "vggface_vgg16.h5": {
+      "url": "https://github.com/rcmalli/keras-vggface/releases/download/v2.0/rcmalli_vggface_tf_vgg16.h5",
+      "bytes": 580070376,
+      "sha256": "c015907b539721eff08bbd5586d2d0cef6f3845ddfdb5c2d4af9f1f942da6baa"
+    },
+    "vggface_labels.npy": {
+      "url": "https://github.com/rcmalli/keras-vggface/releases/download/v2.0/rcmalli_vggface_labels_v1.npy",
+      "bytes": 346184,
+      "sha256": "631277cccff85eb5871200b19190f0ebba4281f72b594983ad44a0677b3d7f09"
+    }
+  },
+  "frozen_weights_unchanged": true,
+  "elapsed_seconds": 973.4633797000279
+}
